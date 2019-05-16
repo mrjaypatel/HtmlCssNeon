@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animation Text</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Akronim');
+		body{
+			margin: 0px;
+			padding: 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #000;		
+			font-family: 'Akronim', cursive;			
+			
+			height: 100vh;
+
+		}
+		h1{
+			font-size: 16em;
+			margin:0px;
+			padding: 0px;
+			color: #111;			
+			
+		}
+		h1 span{
+			margin: 0px;
+			padding: 0px;
+			animation: animate  2.5s linear infinite;			
+			display: table-cell;
+		}
+
+		h1 span:nth-child(1){
+			animation-delay: 0s;
+		}
+		h1 span:nth-child(2){
+			animation-delay: 0.25s;
+		}
+		h1 span:nth-child(3){
+			animation-delay: 0.5s;
+		}
+		h1 span:nth-child(4){
+			animation-delay: 0.75s;
+		}
+		h1 span:nth-child(5){
+			animation-delay: 1s;
+		}
+		h1 span:nth-child(6){
+			animation-delay: 1.75s;
+		}
+		h1 span:nth-child(7){
+			animation-delay: 2.25s;
+		}
+		h1 span:nth-child(8){
+			animation-delay: 2.5s;
+		}
+
+		@keyframes animate{
+			0%, 100%{
+				color: #fff;
+				filter: blur(2px);
+				text-shadow:0 0 10px #FFFF00,
+							0 0 20px #FFFF00,
+							0 0 40px #FFFF00,
+							0 0 80px #FFFF00,
+							0 0 120px #FFFF00,
+							0 0 200px #008000,
+							0 0 300px #008000,
+							0 0 400px #008000;
+			
+			}
+			5%, 95%{
+				color: #000;
+				filter: blur(0px);
+				text-shadow: 0 0 10px none;
+
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		<span>H</span>
+		<span>U</span>
+		<span>M</span>
+		<span>B</span>
+		<span>I</span>
+		<span>N</span>
+		<span>G</span>
+		<span>O</span>		
+	</h1>
+</body>
+</html>
